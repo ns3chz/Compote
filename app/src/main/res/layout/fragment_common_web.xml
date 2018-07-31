@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.hu.zc.basilic.view.MyWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:transitionName="@string/transname_com_webview"
+        app:layout_constraintBottom_toTopOf="@+id/ll_control"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_control"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white_app"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/webview">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#262424"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <cn.hu.zc.ratioview.RatioImageView
+                android:id="@+id/riv_last_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_press_def"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_arrow_back"
+                app:known="height"
+                app:ratio="1" />
+
+            <cn.hu.zc.ratioview.RatioImageView
+                android:id="@+id/riv_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_press_def"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_arrow_prev"
+                app:known="height"
+                app:ratio="1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <cn.hu.zc.ratioview.RatioImageView
+                android:id="@+id/riv_share_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_press_def"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_arrow_top_right"
+                app:known="height"
+                app:ratio="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/progressbar_web"
+            style="@style/MyProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:max="100"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_actonbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white_app"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <cn.hu.zc.ratioview.RatioImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/selector_bg_press_def"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_arrow_left"
+                app:known="height"
+                app:ratio="1" />
+
+            <ImageView
+                android:id="@+id/iv_from"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_from"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:hint="来源"
+                android:singleLine="true"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/ts_mid" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_press_def"
+                android:src="@drawable/ic_launcher_foreground" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

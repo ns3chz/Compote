@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!---->
+    <color name="trans">#00000000</color>
+    <color name="black">#ff000000</color>
+    <color name="white_app">#f2ecec</color>
+    <color name="white_app_dark">#eee1d7d7</color>
+    <color name="text_light">#292929</color>
+    <color name="text_dark">#100f0f</color>
+    <color name="item_stroke_dark">#3d3a3a</color>
+    <color name="item_bg_white">#eae5e5</color>
+    <color name="orange_light">#ffd24c</color>
+    <color name="orange_dark">#c19208</color>
+    <color name="search_dark" >#131313</color>
+    <color name="search_light" >#232222</color>
+    <color name="search_hint" >#333232</color>
+</resources>

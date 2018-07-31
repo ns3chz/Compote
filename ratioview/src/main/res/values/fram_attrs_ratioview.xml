@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="ratio" format="float" /><!--宽高比-->
+    <attr name="known" format="enum"><!--已知宽或高-->
+        <enum name="width" value="1" />
+        <enum name="height" value="2" />
+    </attr>
+
+    <!-- RatioFramelayout -->
+    <declare-styleable name="RatioFramelayout">
+        <attr name="ratio" />
+        <attr name="known" />
+    </declare-styleable>
+
+    <!-- LinearLayout -->
+    <declare-styleable name="RatioLinearLayout">
+        <attr name="ratio" />
+        <attr name="known" />
+    </declare-styleable>
+
+    <!-- RelativeLayout -->
+    <declare-styleable name="RatioRelativeLayout">
+        <attr name="ratio" />
+        <attr name="known" />
+    </declare-styleable>
+
+    <!-- TextView -->
+    <declare-styleable name="RatioTextView">
+        <attr name="ratio" />
+        <attr name="known" />
+    </declare-styleable>
+
+    <!-- ImageView -->
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" />
+        <attr name="known" />
+    </declare-styleable>
+    <!-- View -->
+    <declare-styleable name="RatioView">
+        <attr name="ratio" />
+        <attr name="known" />
+    </declare-styleable>
+
+
+</resources>

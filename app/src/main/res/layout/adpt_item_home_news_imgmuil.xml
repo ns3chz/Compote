@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/adpt_item_selector_press_def"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:transitionName="@string/transname_com_webview">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="标题"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/ts_mid" />
+
+    <include layout="@layout/adpt_item_news_other_info" />
+
+</LinearLayout>

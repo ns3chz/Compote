@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transname_com_webview">common_web</string>
+    <string name="transname_com_download">common_download</string>
+</resources>

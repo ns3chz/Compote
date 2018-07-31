@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ts_large">25sp</dimen>
+    <dimen name="ts_mid">20sp</dimen>
+    <dimen name="ts_small">16sp</dimen>
+    <dimen name="ts_tiny">12sp</dimen>
+</resources>

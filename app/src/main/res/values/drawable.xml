@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="def_tab_background">#0000</drawable>
+    <drawable name="trans">#00000000</drawable>
+    <drawable name="gray_light">#d7d7d7</drawable>
+</resources>

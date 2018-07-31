@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<SysInfo>
+    <KBTCOffToOnTimeSpan>0</KBTCOffToOnTimeSpan>
+    <PWD>2468</PWD>
+    <IsPlayBrakeSoundOfAll>0</IsPlayBrakeSoundOfAll>
+    <IsKBTCTipsAfterStopOffFire>0</IsKBTCTipsAfterStopOffFire>
+    <IsItemUnfinishNeedQb>0</IsItemUnfinishNeedQb>
+    <ChangeRoadBackJD>8.0</ChangeRoadBackJD>
+
+
+
+    <IsUpSpeedbyTime>0</IsUpSpeedbyTime>
+
+
+
+    <YZJD>0</YZJD>
+
+    <IsTestEndNeedLooseClutch>0</IsTestEndNeedLooseClutch>
+
+    <RandLightMaxShan>4</RandLightMaxShan>
+
+    <IsJJDAtAddSpeed>0</IsJJDAtAddSpeed>
+
+    <isQbTickAfterStart>0</isQbTickAfterStart>
+    <QbRepeatTick>0</QbRepeatTick>
+    <isKbtcCloseLight>0</isKbtcCloseLight>
+    <IsZXXSSpeedKeep>1</IsZXXSSpeedKeep>
+    <IsRoundCarInOrder>0</IsRoundCarInOrder>
+    <ZxxsDelayDI>10</ZxxsDelayDI>
+    <IsAutoTestEndNeedAll>1</IsAutoTestEndNeedAll>
+</SysInfo>

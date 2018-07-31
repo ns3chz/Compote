@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.CompoteActivity">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/stl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:stl_clickable="true"
+            app:stl_customTabTextLayoutId="@layout/textview_cust"
+            app:stl_customTabTextViewId="@id/textview"
+            app:stl_defaultTabBackground="@drawable/def_tab_background"
+            app:stl_defaultTabTextHorizontalPadding="10dp"
+            app:stl_defaultTabTextMinWidth="0dp"
+            app:stl_indicatorColor="#293a45"
+            app:stl_indicatorCornerRadius="25dp"
+            app:stl_indicatorGravity="center"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorThickness="43dp"
+            app:stl_indicatorWidth="auto" />
+
+    </LinearLayout>
+
+</RelativeLayout>
